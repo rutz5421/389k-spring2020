@@ -1,3 +1,97 @@
-<!-- We have purposely given you an empty file. We want you to get some practice with creating all the tags from the ground up.
- -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <!--CSS #3.1: li-->
+        <!--CSS #3.2: .text-->
+        <!--CSS #4.1: body-->
+        <!--CSS #4.4: .text-->
+        <!--CSS #4.5: #links-->
+        <!--CSS #5: @media-->
+        <style>
+        body {
+            background-color: azure;
+        }
+        header {
+            text-align: center;
+         }
+        .heading {
+            text-align: center;
+            color: blue;
+         }
+        .text {
+            text-align: center;
+            display: block;
+            margin: 0px 100px 20px 100px; 
+        }
+        #links {
+            text-align: center;
+            padding: 0px 100px 0px 100px;
+        }
+        #copyright {
+            text-align: center;
+        }
+        li {
+            display: inline;
+         }
 
+        @media (max-width: 1080px) {
+            body {
+                background-color: red;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="http://umd-aimar.com/AIMAR.jpg" width="720px"> <!--HTML #1-->
+        </header>
+        <h1 class="heading"><i>Team AIMAR</i></h1> <!--HTML #3, CSS #1.1-->
+
+        <p class="text"> <!--CSS #1.2-->
+            Team AIMAR is an independent undergraduate research team run through the Gemstone Program at the University of Maryland, College Park.
+        </p>
+        <p class="text">
+            Our research focuses on designing a medical assistance robot that can respond to patients, collect skin image data, and help doctors decide a diagnosis.
+        </p>
+        <p class="text"> 
+            Our official team website and Github are linked below.
+        </p>
+
+        <!--Important Team Deadlines-->
+        <table align="center"> <!--HTML #4-->
+            <tr>
+                <th>Time</th>
+                <th>Important Events</th>
+            </tr>
+            <tr>
+                <td>Spring 2018</td>
+                <td>Team Formation</td>
+            </tr>
+            <tr>
+                <td>Fall 2019</td>
+                <td>Do Good Showcase</td>
+            </tr>
+            <tr>
+                <td>Spring 2020</td>
+                <td>Undergraduate Research Day</td>
+            </tr>
+        </table>
+
+        <!--List of Visitable Sites HTML #2-->
+        <ul id="links"> <!--CSS #2.1, 4.2, 4.3-->
+            <li>
+                <a href="http://umd-aimar.com"><img src="https://www.logolynx.com/images/logolynx/39/39542ab77a8f022f4d5a3cc5fec83f6e.png"
+                 height="60px" width="60px"></a>
+            </li>
+            <li>
+                <a href="http://github.com/UMD-AIMAR"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                 height="60px" width="60px"></a>
+            </li>
+        </ul>
+        
+        <!--CSS #2.2-->
+        <p id="copyright"><small>Copyright <strike>whenever we get it</strike> by Ryan Utz</small></p> <!--HTML #3, 5-->
+
+    </body>
+</html>
